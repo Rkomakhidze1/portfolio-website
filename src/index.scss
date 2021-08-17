@@ -1,0 +1,17 @@
+@import 'sass/abstracts/functions';
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/variables';
+
+@import 'sass/base/animations';
+@import 'sass/base/basics';
+@import 'sass/base/typographies';
+@import 'sass/base/utilities';
+
+@import 'sass/components/button';
+
+@import 'components/header/header.module';
+@import 'components/footer/footer.module';
+
+html {
+  font-size: 62.5%;
+}

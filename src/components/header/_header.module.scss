@@ -1,0 +1,83 @@
+.header {
+  height: 95vh;
+  background: linear-gradient(
+      to bottom right,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url('../../assets/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+}
+
+/* Animations */
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
+.test {
+  background-color: white;
+}

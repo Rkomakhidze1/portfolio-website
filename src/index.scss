@@ -7,10 +7,17 @@
 @import 'sass/base/typographies';
 @import 'sass/base/utilities';
 
-@import 'sass/components/button';
+@import 'sass/layouts/grid';
 
-@import 'components/header/header.module';
-@import 'components/footer/footer.module';
+@import 'sass/components/button';
+@import 'sass/components/bg-video';
+
+@import 'components/header/header';
+@import 'components/about/about';
+@import 'components/jobs/jobs';
+@import 'components/card/card';
+@import 'components/referrals/referrals';
+@import 'components/comment/comment';
 
 html {
   font-size: 62.5%;

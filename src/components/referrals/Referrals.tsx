@@ -1,5 +1,6 @@
 import React from 'react';
 import Comment from '../comment/Commnet';
+// @ts-ignore
 import mp4 from '../../assets/book.mp4';
 // import webm from '../../assets/video.webm';
 

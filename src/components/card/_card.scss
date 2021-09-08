@@ -23,12 +23,15 @@
 
     &--back {
       transform: rotateY(180deg);
+      .btn {
+        margin-top: 21rem;
+      }
 
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-pink-light,
+          $color-pink-dark
         );
       }
 
@@ -43,8 +46,8 @@
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
+          $color-pink-light,
+          $color-pink-dark
         );
       }
     }
@@ -70,26 +73,32 @@
 
     &--1 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-secondary-light,
-        $color-secondary-dark
-      );
+          to right bottom,
+          rgba($color-pink-light, 0.6),
+          rgba($color-pink-dark, 0.6)
+        ),
+        url('../../assets/doggy3.jpg');
+      background-position: 0 76%;
     }
 
     &--2 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      );
+          to right bottom,
+          rgba($color-pink-light, 0.6),
+          rgba($color-pink-dark, 0.6)
+        ),
+        url('../../assets/doggy1.jpg');
+      background-position: 0px 51%;
     }
 
     &--3 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-tertiary-light,
-        $color-tertiary-dark
-      );
+          to right bottom,
+          rgba($color-pink-light, 0.6),
+          rgba($color-pink-dark, 0.6)
+        ),
+        url('../../assets/doggy2.jpg');
+      background-position: -31px 37%;
     }
   }
 
@@ -113,8 +122,8 @@
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
+        rgba($color-pink-light, 0.85),
+        rgba($color-pink-dark, 0.85)
       );
     }
 
@@ -136,7 +145,7 @@
   }
 
   &__details {
-    padding: 3rem;
+    padding: 2rem;
 
     ul {
       list-style: none;
@@ -149,7 +158,7 @@
         padding: 1rem;
 
         &:not(:last-child) {
-          border-bottom: 1px solid $color-grey-light-2;
+          border-bottom: 1px solid $color-primary;
         }
       }
     }

@@ -1,11 +1,45 @@
 import React from 'react';
 
-function Card() {
+interface Props {
+  number: number;
+  jobName: string;
+  description: string;
+}
+
+function Card({ number, jobName, description }: Props) {
   return (
     <div className="card">
-      <div className="card__side card__side--front">card front</div>
-      <div className="card__side card__side--back card__side--back-2">
-        card back
+      <div className="card__side card__side--front">
+        <div className={'card__picture card__picture--' + number}></div>
+        <h4 className="card__heading">
+          <span className="card__heading-span card__heading-span--1">
+            {jobName}
+          </span>
+        </h4>
+        <div
+          className="card__description-container"
+          style={{ padding: '1rem 2rem 0' }}
+        >
+          <p className="paragraph" style={{ marginBottom: '-1rem' }}>
+            {description}
+          </p>
+          <div className="card__details">
+            <ul>
+              <li>something I did</li>
+              <li>something I did</li>
+              <li>something I did</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          'card__side card__side--back u-center-text card__side--back-' + number
+        }
+      >
+        <a href="#" className="btn btn--white">
+          Visit website
+        </a>
       </div>
     </div>
   );

@@ -96,11 +96,15 @@
 }
 
 .btn-text {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;
+    border: 0;
+    background-color: transparent;
     color: $color-primary;
     display: inline-block;
+    cursor: pointer;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
     padding: 3px;

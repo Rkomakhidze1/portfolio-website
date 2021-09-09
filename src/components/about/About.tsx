@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import image from '../../assets/nat-9.jpg';
+import { Events } from '../../events/events';
+import { ScrollToJobs } from '../../events/scrollToJobs';
 
 function About() {
+  const aboutRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    document.addEventListener(Events.ScrollToAbout, () => {
+      if (!aboutRef.current) return;
+      window.scrollTo({
+        top: aboutRef.current.offsetTop - 40,
+        behavior: 'smooth',
+      });
+    });
+  }, []);
+
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">self taugth software engineer</h2>
+        <h2 className="heading-secondary" ref={aboutRef}>
+          self taugth software engineer
+        </h2>
       </div>
       <div className="row">
         <div className="col-1-of-2">
@@ -24,9 +40,13 @@ function About() {
             iste! Iste alias debitis dolor sequi perferendis deleniti iure ad
             soluta adipisci.
           </p>
-          <a className="btn-text" href="#">
+          <button
+            // href="/#"
+            className="btn-text"
+            onClick={() => document.dispatchEvent(new ScrollToJobs())}
+          >
             Learn more
-          </a>
+          </button>
         </div>
         <div className="col-1-of-2">
           <img

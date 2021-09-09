@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollToAbout } from '../../events/scrollToAbout';
 
 function Header() {
   return (
@@ -9,7 +10,11 @@ function Header() {
             <span className="heading-primary--main">Im Rezo</span>
             <span className="heading-primary--sub">fullstack developer</span>
           </h1>
-          <a href="/#" className="btn btn--white btn--animated">
+          <a
+            href="/#"
+            className="btn btn--white btn--animated"
+            onClick={() => document.dispatchEvent(new ScrollToAbout())}
+          >
             discover more
           </a>
         </div>

@@ -3,7 +3,7 @@
 @import 'sass/abstracts/variables';
 
 @import 'sass/base/animations';
-@import 'sass/base/basics';
+@import 'sass/base/base';
 @import 'sass/base/typographies';
 @import 'sass/base/utilities';
 
@@ -18,7 +18,3 @@
 @import 'components/card/card';
 @import 'components/referrals/referrals';
 @import 'components/comment/comment';
-
-html {
-  font-size: 62.5%;
-}

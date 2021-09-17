@@ -50,7 +50,12 @@ function About() {
         </div>
         <div className="col-1-of-2">
           <img
-            style={{ backgroundSize: 'cover', width: '500px' }}
+            style={{
+              backgroundSize: 'cover',
+              maxWidth: '100%',
+              marginTop: '-3rem',
+              borderRadius: '3px',
+            }}
             src={image}
             alt="prifle"
           />

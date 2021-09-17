@@ -4,9 +4,11 @@ interface Props {
   number: number;
   jobName: string;
   description: string;
+  numberStr: string;
 }
 
-function Card({ number, jobName, description }: Props) {
+function Card({ number, jobName, description, numberStr }: Props) {
+  const list = process.env[`REACT_APP_JOBS_${numberStr}_LIST`]!.split('*');
   return (
     <div className="card">
       <div className="card__side card__side--front">
@@ -25,9 +27,9 @@ function Card({ number, jobName, description }: Props) {
           </p>
           <div className="card__details">
             <ul>
-              <li>something I did</li>
-              <li>something I did</li>
-              <li>something I did</li>
+              {list.map((str) => (
+                <li>{str}</li>
+              ))}
             </ul>
           </div>
         </div>

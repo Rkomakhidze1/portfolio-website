@@ -7,15 +7,19 @@ function Header() {
       <header className="header">
         <div className="header__text-box">
           <h1 className="heading-primary">
-            <span className="heading-primary--main">Im Rezo</span>
-            <span className="heading-primary--sub">fullstack developer</span>
+            <span className="heading-primary--main">
+              {process.env.REACT_APP_HEADER_MAIN}
+            </span>
+            <span className="heading-primary--sub">
+              {process.env.REACT_APP_HEADER_SECONDARY}
+            </span>
           </h1>
           <a
             href="/#"
             className="btn btn--white btn--animated"
             onClick={() => document.dispatchEvent(new ScrollToAbout())}
           >
-            discover more
+            {process.env.REACT_APP_HEADER_BUTTON}
           </a>
         </div>
         <div style={{ width: 200 }} className="test"></div>

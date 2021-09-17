@@ -28,22 +28,25 @@ function Jobs() {
         <div className="col-1-of-3">
           <Card
             number={1}
-            jobName="Digital Clipboard"
-            description="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate"
+            numberStr="FIRST"
+            jobName={process.env.REACT_APP_JOBS_FIRST_HEADING!}
+            description={process.env.REACT_APP_JOBS_FIRST_TEXT!}
           />
         </div>
         <div className="col-1-of-3">
           <Card
             number={2}
-            jobName="WeCraft"
-            description="used to demonstrate the visual form of a document or a typeface without"
+            numberStr="SECOND"
+            jobName={process.env.REACT_APP_JOBS_SECOND_HEADING!}
+            description={process.env.REACT_APP_JOBS_SECOND_TEXT!}
           />
         </div>
         <div className="col-1-of-3">
           <Card
             number={3}
-            jobName="Despani Technologies"
-            description="relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."
+            numberStr="THIRD"
+            jobName={process.env.REACT_APP_JOBS_THIRD_HEADING!}
+            description={process.env.REACT_APP_JOBS_THIRD_TEXT!}
           />
         </div>
       </div>

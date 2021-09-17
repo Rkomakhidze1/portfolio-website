@@ -18,6 +18,7 @@ code {
   color: $color-creme;
   text-transform: uppercase;
   margin-bottom: 6rem;
+  width: max-content;
 
   &--main {
     display: block;
@@ -28,6 +29,11 @@ code {
     animation-name: moveInFromLeft;
     animation-duration: 800ms;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1.5rem;
+      font-family: 5rem;
+    }
   }
 
   &--sub {
@@ -39,6 +45,10 @@ code {
     animation-name: moveInFromRight;
     animation-duration: 800ms;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.7rem;
+    }
   }
 }
 
@@ -54,6 +64,14 @@ code {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   backface-visibility: hidden;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     backface-visibility: hidden;

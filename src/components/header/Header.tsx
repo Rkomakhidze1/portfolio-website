@@ -14,13 +14,12 @@ function Header() {
               {process.env.REACT_APP_HEADER_SECONDARY}
             </span>
           </h1>
-          <a
-            href="/#"
+          <button
             className="btn btn--white btn--animated"
             onClick={() => document.dispatchEvent(new ScrollToAbout())}
           >
             {process.env.REACT_APP_HEADER_BUTTON}
-          </a>
+          </button>
         </div>
         <div style={{ width: 200 }} className="test"></div>
       </header>

@@ -39,9 +39,7 @@ function Card({ number, jobName, description, numberStr }: Props) {
           'card__side card__side--back u-center-text card__side--back-' + number
         }
       >
-        <a href="#" className="btn btn--white">
-          Visit website
-        </a>
+        <button className="btn btn--white">Visit website</button>
       </div>
     </div>
   );

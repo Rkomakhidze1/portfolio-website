@@ -8,7 +8,7 @@ function Referrals() {
   return (
     <div className="section-referrals">
       <div className="bg-video">
-        <video className="bg-video__content" muted loop autoPlay>
+        <video className="bg-video__content" playsInline muted loop autoPlay>
           <source src={mp4} type="video/mp4" />
           "Your browser is not supported"
         </video>

@@ -5,9 +5,10 @@ interface Props {
   jobName: string;
   description: string;
   numberStr: string;
+  url: string;
 }
 
-function Card({ number, jobName, description, numberStr }: Props) {
+function Card({ number, jobName, description, numberStr, url }: Props) {
   const list = process.env[`REACT_APP_JOBS_${numberStr}_LIST`]!.split('*');
   return (
     <div className="card">
@@ -39,7 +40,12 @@ function Card({ number, jobName, description, numberStr }: Props) {
           'card__side card__side--back u-center-text card__side--back-' + number
         }
       >
-        <button className="btn btn--white">Visit website</button>
+        <button
+          className="btn btn--white"
+          onClick={() => window.open(url, '_blank')}
+        >
+          Visit website
+        </button>
       </div>
     </div>
   );

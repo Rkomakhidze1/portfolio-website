@@ -31,6 +31,7 @@ function Jobs() {
             numberStr="FIRST"
             jobName={process.env.REACT_APP_JOBS_FIRST_HEADING!}
             description={process.env.REACT_APP_JOBS_FIRST_TEXT!}
+            url={'https://www.digitalclipboard.com'}
           />
         </div>
         <div className="col-1-of-3">
@@ -39,6 +40,7 @@ function Jobs() {
             numberStr="SECOND"
             jobName={process.env.REACT_APP_JOBS_SECOND_HEADING!}
             description={process.env.REACT_APP_JOBS_SECOND_TEXT!}
+            url={'https://www.wecraft.ai'}
           />
         </div>
         <div className="col-1-of-3">
@@ -47,6 +49,7 @@ function Jobs() {
             numberStr="THIRD"
             jobName={process.env.REACT_APP_JOBS_THIRD_HEADING!}
             description={process.env.REACT_APP_JOBS_THIRD_TEXT!}
+            url={'http://despanitech.com/'}
           />
         </div>
       </div>

@@ -56,26 +56,12 @@ function About() {
               PHONE: <span style={{ marginLeft: '21px' }}>+995 599441919</span>
             </li>
           </ul>
-          <h3 className="heading-tertiary u-margin-bottom-small">Experience</h3>
-          <p className="paragraph" style={{ marginBottom: '1rem' }}>
-            {process.env.REACT_APP_ABOUT_EXPERIENCE}
-          </p>
-          <p className="paragraph">
-            currently preferred tech stack: nodejs + typescript, react +
-            typescript + redux, graphql, postgresql.
-          </p>
-          <button
-            className="btn-text"
-            onClick={() => document.dispatchEvent(new ScrollToJobs())}
-          >
-            Learn more
-          </button>
         </div>
         <div className="col-1-of-2">
           <img
             style={{
               backgroundSize: 'cover',
-              maxWidth: '100%',
+              maxWidth: '83%',
               marginTop: '5px',
               borderRadius: '3px',
             }}
@@ -83,6 +69,23 @@ function About() {
             alt="prifle"
           />
         </div>
+      </div>
+
+      <div style={{ maxWidth: '114rem', margin: '-8rem auto 0' }}>
+        <h3 className="heading-tertiary u-margin-bottom-small">Experience</h3>
+        <p className="paragraph" style={{ marginBottom: '1rem' }}>
+          {process.env.REACT_APP_ABOUT_EXPERIENCE}
+        </p>
+        <p className="paragraph">
+          currently preferred tech stack: nodejs + typescript, react +
+          typescript + redux, graphql, postgresql.
+        </p>
+        <button
+          className="btn-text"
+          onClick={() => document.dispatchEvent(new ScrollToJobs())}
+        >
+          Learn more
+        </button>
       </div>
     </section>
   );

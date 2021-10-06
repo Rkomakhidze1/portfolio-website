@@ -24,6 +24,19 @@ html {
   }
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+
+  & span {
+    display: inline-block;
+  }
+}
+
 ::selection {
   background-color: $color-primary-light;
   color: $color-white;
